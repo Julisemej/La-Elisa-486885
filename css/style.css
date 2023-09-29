@@ -1,0 +1,718 @@
+
+
+
+
+
+
+
+
+
+/*!--------------RESET------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/*!--------------HEADER------------------*/
+
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font: weight 400;
+}
+
+
+header{
+    background-color: #120c14;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    display: flex;
+    margin-left: 10px;
+}
+
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+
+    margin: 5px 10px 5px 10px;
+    font-size: 20px;
+}
+
+
+
+header nav ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+/*!--------------MAIN------------------*/
+
+main{
+    background-color: #003641;
+}
+
+
+/*!------SECCION HERO-----*/
+
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    color: rgb(255, 255, 255);
+    background-image: url(../img/cabañaaaaa.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+
+
+
+/*!------SECCION UNO-----*/
+
+
+.seccionuno{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.seccionuno div{
+    width: 50%;
+    margin: 20px;   
+    color: white;
+}
+
+.seccionuno div h2{
+    font-size: 50px;
+    
+}
+
+.seccionuno div p{
+    font-size: 20px;
+}
+
+
+.seccionuno img{
+    width: 500px;
+    height: 500px;
+    box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+    -moz-box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+    padding: 2px;
+}
+
+
+/*!------SECCION GRID----*/
+
+.grid-container{
+    width: 100%;
+    
+    padding: 20px;
+    display: grid;
+    grid-auto-rows: 220px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    color: white;
+}
+
+.primer-item{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.segundo-item{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.text-item{
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: center;
+    
+}
+
+.text-item h2{
+    margin-top: 240px;
+    font-size: 40px;
+
+}
+
+.text-item p{
+    font-size: 25px;
+    text-align: unset;
+    
+}
+
+.tercer-item{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.cuarto-item{
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+
+
+
+
+.grid-container div img{
+    width: 300px;
+    height: 300px;
+    box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+    -webkit-box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+    -moz-box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+}
+
+
+/*!-----------ASIDE--------*/
+
+
+aside div p{
+    width: 80%;
+    height: 50vh;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 80px;
+    padding: 100px;
+}
+
+
+
+aside div img{
+    width: 100px;
+    height: 500px;
+    padding: 10px;
+}
+
+
+/*!--------------PROPIEDADES------------*/
+
+
+.propiedades h2{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 40px;
+    padding: 10px;
+}
+
+
+
+/*!-------TARJETAS DE PRODUCTOS--------*/
+
+.productos{
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+/*!-------- SERVICIOS -----------*/
+
+
+
+.servicios{
+    height: auto;
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: nowrap;
+}
+
+
+.info-servicios h3{
+    font-size: 50px;
+    padding: 10px;
+    
+}
+
+
+.info-img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.servicios img{
+    width: 400px;
+    height: 180px;
+    padding: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*!---------------Conocenos------------*/
+.conocenos{
+    text-align: center;
+    background-color:bisque ;
+}
+
+
+
+
+
+
+
+
+/*!----------contactanos------------*/
+
+
+
+
+.contactanos h2{
+    text-align: center;
+    color: white;
+}
+
+
+.formulario{
+    text-transform: uppercase;
+    background-image: url(../img/tecnologia.jpg);
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3px;
+    height: auto;
+}
+
+.formulario div{
+    background-color: transparent;
+    padding: 2px;
+    color: white;
+}
+
+.formulario #enviar{
+    background-color: rgb(51, 96, 244);
+}
+
+.formulario div label{
+    background-color:transparent;
+}
+
+.formulario div textarea {
+    background-color: transparent;
+}
+
+.formulario ::placeholder{
+    background-color: transparent;
+}
+
+/*!--------------FOOTER------------------*/
+
+footer{
+    background-color: #146884;
+}
+
+footer .contenedorfooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3{
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+/*!------Seccion Responsive MEDIA QUERY-------*/
+
+@media screen and (max-width:912px){
+
+/*!----seccion uno-----*/
+    .seccionuno div h2{
+        font-size: 25px;
+    }
+    .seccionuno div p{
+        font-size: 15px;
+    }
+    .seccionuno img{
+        width: 400px;
+        height: 400px;
+        box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+        -webkit-box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+        -moz-box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+        padding: 2px;
+        margin-right: 30px;
+    }
+
+    /*!----grid container------*/
+    .grid-container{
+        width: 100%;
+        padding: 20px;
+        display: grid;
+        grid-auto-rows: 220px;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        color: white;
+    }
+    
+    .primer-item{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .segundo-item{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .text-item{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    
+    .text-item h2{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    
+    .text-item p{
+        font-size: 15px;
+    }
+    
+    .tercer-item{
+        grid-row-start: 3;
+        grid-row-end: 1;
+        display: none;
+    }
+    
+    .cuarto-item{
+        grid-column:span 2;
+    }
+    
+    
+    
+    .grid-container div img{
+        width: 100%;
+        height: 100%;
+        box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+        -webkit-box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+        -moz-box-shadow: 10px 10px 400px 30px rgba(0,0,0,0.76);
+    }
+
+/*!-------aside-------*/
+aside div p{
+    width: 100%;
+    height: 30vh;
+    color: white;
+    text-align: start;
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 40px;
+}
+
+/*!-------footer-------*/
+footer .contenedorfooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer p{
+    font-size: 10px;
+}
+
+footer h3{
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    background-color: white;
+    text-align: center;
+}
+}
+
+@media screen and (max-width:690px){
+
+    .info-img{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:669px){
+
+/*!----seccion uno-----*/
+.seccionuno{
+    height: 40vh;
+    margin-top: 10px;
+}
+
+.seccionuno div h2{
+    font-size: 12px;
+    
+}
+
+.seccionuno div p{
+    font-size: 10px;
+}
+
+.seccionuno img{
+    width: 200px;
+    height: 200px;
+}
+
+/*!----grid container------*/
+.grid-container{
+        width: 100%;
+        padding: 20px;
+        display: grid;
+        grid-auto-rows: 220px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+        color: white;
+    }
+    
+    .primer-item{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .segundo-item{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .text-item{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    
+    .text-item h2{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    
+    .text-item p{
+        font-size: 10px;
+    }
+    
+    .tercer-item{
+        grid-row-start: 3;
+        grid-row-end: 1;
+    }
+    
+    .cuarto-item{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    
+    .grid-item img{
+        width: 50%;
+        height: 50%;
+    }
+
+
+/*!------aside------*/
+
+aside div p{
+    width: 100%;
+    height: 20vh;
+    color: white;
+    text-align: start;
+    font-size: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+}
+
+@media screen and (max-width:480px){
+
+/*!----seccion uno-----*/
+.seccionuno{
+    height: 40vh;
+    margin-top: 10px;
+}
+
+.seccionuno div h2{
+    font-size: 10px;
+}
+
+.seccionuno div p{
+    font-size: 6px;
+}
+
+.seccionuno img{
+    width: 200px;
+    height: 200px;
+}
+
+/*!----grid container------*/
+.grid-container{
+        width: 100%;
+        padding: 20px;
+        display: grid;
+        grid-auto-rows: 150px;
+        grid-template-columns: 1fr;
+        gap: 5px;
+        color: white;
+    }
+    
+    .primer-item{
+        grid-row: span 1;
+    }
+    
+    .segundo-item{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .text-item{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    
+    .text-item h2{
+        margin-top: 15px;
+        font-size: 12px;
+    }
+    
+    .text-item p{
+        font-size: 10px;
+    }
+    
+    .tercer-item{
+        display: hidden;
+        
+    }
+    
+    .cuarto-item{
+        display: none;
+    }
+    
+    .grid-item img{
+        width: 50%;
+        height: 50%;
+    }
+
+/*!------aside------*/
+aside div p{
+    width: 100%;
+    height: 20vh;
+    color: white;
+    text-align: start;
+    font-size: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
