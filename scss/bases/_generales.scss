@@ -1,0 +1,124 @@
+/*-------INDEX----------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*!--------------HEADER------------------*/
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font: weight 400;
+}
+
+.container-fluid{
+    z-index: 10;
+}
+
+header h1{
+    font-size: 5px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 5px 5px 5px 5px;
+    font-size: 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+main{
+    background-color: $color-principal;
+}
+
+/*----SECCION CAROUSEL (INDEX)-----*/
+.carousel-inner div img{
+    overflow: hidden;
+    height: 400px;
+    padding: 10px;
+}
+
+/*---PROPIEDADES (TARJETAS DE PRODUCTOS)---*/
+.productos{
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.card{
+    z-index: 1;
+}
+
+.productos div img{
+    height: 100%;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/*----seccion-grid- conocenos----*/
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px;
+    gap: 10px; 
+    padding: 5px;
+}
+
+.grid-item{
+    position: relative;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+}
+
+
+
+.grid-container div img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.img-uno{
+    grid-column:span 2 ;
+    
+}
+
+.img-dos{
+    grid-row: span 2;
+}
+
+.img-seis{
+    grid-column:span 2;
+}
+
+footer{
+    background-color:$color-terceario;
+}
+
+footer .contenedorfooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h3{
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+    background-color: white;
+    text-align: center;
+}
