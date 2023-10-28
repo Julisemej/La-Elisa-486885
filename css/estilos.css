@@ -13,8 +13,8 @@ body {
 .container-fluid {
   z-index: 10; }
 
-header h1 {
-  font-size: 5px; }
+body div header h1 {
+  font-size: 40px; }
 
 header nav ul {
   list-style: none;
@@ -32,9 +32,18 @@ main {
   background-color: #003641; }
 
 /*----SECCION CAROUSEL (INDEX)-----*/
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; }
+
+.sec-carousel div {
+  width: 800px; }
+
 .carousel-inner div img {
   overflow: hidden;
-  height: 400px;
+  height: 500px;
   padding: 10px; }
 
 /*---PROPIEDADES (TARJETAS DE PRODUCTOS)---*/
@@ -166,7 +175,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
-    justify-content: space-between; }
+    justify-content: center; }
     .seccion-dos div img {
       width: 250px;
       height: auto;
@@ -178,13 +187,16 @@ header {
 
 /*!-----------ASIDE--------*/
 aside div p {
-  width: 80%;
-  height: 50vh;
+  width: 100%;
   color: white;
   text-align: center;
+  align-items: center;
   font-size: 20px;
-  margin-left: 80px;
   padding: 100px; }
+
+.carousel carousel-contenedor {
+  display: flex;
+  justify-content: center; }
 
 /*-------PROPIEDADES--------*/
 .propiedades h2 {
@@ -216,12 +228,18 @@ aside div p {
 
 /*---REQUISITOS-------*/
 main .requisitos {
+  display: flex;
   color: white;
-  padding: 10px; }
-  main .requisitos h2 {
+  padding: 10px;
+  width: 100%;
+  height: 80vh; }
+  main .requisitos .lista-requisitos h2 {
     font-size: 30px; }
-  main .requisitos ol {
+  main .requisitos .lista-requisitos ol {
     font-size: 17px; }
+  main .requisitos .lista-requisitos .folleto-requisitos img {
+    width: 100%;
+    height: 100%; }
 
 /*----CONOCENOS-----*/
 main .conocenos {
@@ -235,16 +253,49 @@ main .conocenos {
 /*----CONTACTANOS-----*/
 .contactanos {
   text-align: center;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column; }
+  .contactanos img {
+    height: 350px; }
   .contactanos .descripcion-emprendimiento {
     color: white;
-    text-align: center; }
-    .contactanos .descripcion-emprendimiento h3 {
-      font-size: 40px; }
-    .contactanos .descripcion-emprendimiento h4 {
-      font-size: 25px; }
-    .contactanos .descripcion-emprendimiento p {
+    text-align: center;
+    padding: 20px; }
+    .contactanos .descripcion-emprendimiento .titulo-descrip {
+      text-align: center; }
+      .contactanos .descripcion-emprendimiento .titulo-descrip h3 {
+        font-size: 40px; }
+      .contactanos .descripcion-emprendimiento .titulo-descrip h4 {
+        font-size: 25px; }
+      .contactanos .descripcion-emprendimiento .titulo-descrip img {
+        width: 500px;
+        padding: 20px; }
+    .contactanos .descripcion-emprendimiento .div-uno-contactanos p {
       font-size: 13px; }
+    .contactanos .descripcion-emprendimiento .div-uno-contactanos img {
+      width: 500px;
+      padding: 20px; }
+    .contactanos .descripcion-emprendimiento .div-dos-contactanos p {
+      font-size: 13px; }
+    .contactanos .descripcion-emprendimiento .div-dos-contactanos img {
+      width: 500px;
+      padding: 20px; }
+    .contactanos .descripcion-emprendimiento .div-tres-contactanos p {
+      font-size: 13px; }
+    .contactanos .descripcion-emprendimiento .div-tres-contactanos img {
+      width: 500px;
+      padding: 20px; }
+    .contactanos .descripcion-emprendimiento .div-cuatro-contactanos p {
+      font-size: 13px; }
+    .contactanos .descripcion-emprendimiento .div-cuatro-contactanos img {
+      width: 500px;
+      padding: 20px; }
+    .contactanos .descripcion-emprendimiento .div-cinco-contactanos p {
+      font-size: 13px; }
+    .contactanos .descripcion-emprendimiento .div-cinco-contactanos img {
+      width: 500px;
+      padding: 20px; }
   .contactanos h2 {
     text-align: center;
     color: white; }
@@ -259,7 +310,7 @@ main .conocenos {
       background-size: cover;
       padding: 3px;
       height: auto;
-      width: 40%; }
+      width: 100%; }
       .contactanos .caja-formulario .formulario div {
         background-color: transparent;
         padding: 2px;
@@ -274,16 +325,27 @@ main .conocenos {
 
 footer {
   background-color: #146884; }
-
-footer .contenedorfooter {
-  display: flex;
-  justify-content: space-around; }
-
-footer h3 {
-  color: black;
-  font-size: 10px;
-  background-color: white;
-  text-align: center; }
+  footer .contenedorfooter {
+    display: flex;
+    align-items: center; }
+    footer .contenedorfooter .img-logo {
+      width: 100px;
+      height: 100px; }
+    footer .contenedorfooter p {
+      font-size: 15px;
+      padding: 5px;
+      text-align: start; }
+    footer .contenedorfooter .redes {
+      display: flex;
+      flex-direction: row; }
+      footer .contenedorfooter .redes img {
+        padding: 5px;
+        justify-content: space-around; }
+  footer h3 {
+    color: black;
+    font-size: 10px;
+    background-color: white;
+    text-align: center; }
 
 /*!------Seccion Responsive MEDIA QUERY-------*/
 @media screen and (max-width: 912px) {
@@ -301,21 +363,21 @@ footer h3 {
     -moz-box-shadow: 10px 10px 400px 30px rgba(0, 0, 0, 0.76);
     padding: 2px;
     margin-right: 30px; }
+  .seccion-dos h2 {
+    font-size: 30px; }
+  .seccion-dos p {
+    font-size: 18px; }
   /*-------aside-------*/
   aside div p {
-    width: 100%;
-    height: 30vh;
     color: white;
-    text-align: start;
-    font-size: 15px;
-    margin-left: 10px;
-    padding: 40px; }
+    text-align: center;
+    font-size: 18px; }
   /*-------footer-------*/
   footer .contenedorfooter {
     display: flex;
     justify-content: space-around; }
   footer p {
-    font-size: 10px; }
+    font-size: 15px; }
   footer h3 {
     color: black;
     font-size: 10px;
@@ -334,18 +396,25 @@ footer h3 {
     height: 300px; } }
 
 @media screen and (max-width: 800px) {
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 300px;
-    gap: 10px; }
-  .img-cinco {
-    grid-column: span 2; }
-  .img-nueve {
-    grid-column: span 2; }
-  /*---contactanos-formulario*/
-  .formulario {
-    margin: 0; } }
+  .carousel .carousel-contenedor {
+    display: flex;
+    display: none; } }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  gap: 10px; }
+
+.img-cinco {
+  grid-column: span 2; }
+
+.img-nueve {
+  grid-column: span 2; }
+
+/*---contactanos-formulario*/
+.formulario {
+  margin: 0; }
 
 @media screen and (max-width: 768px) {
   /*propiedades-tarjetas de productos*/
@@ -355,7 +424,7 @@ footer h3 {
 
 @media screen and (max-width: 690px) {
   /*propiedades-servicios*/
-  .info-img {
+  .servicios .info-img img {
     display: none; } }
 
 @media screen and (max-width: 669px) {
@@ -367,17 +436,35 @@ footer h3 {
   .seccionuno div p {
     font-size: 15px; }
   .seccionuno img {
-    width: 180px;
-    height: 180px; }
+    width: 250px;
+    height: 250px; }
   /*------aside------*/
   aside div p {
     width: 100%;
-    height: 20vh;
     color: white;
     text-align: start;
-    font-size: 10px;
+    font-size: 15px;
     margin-left: 10px;
     padding: 10px; } }
+
+@media screen and (max-width: 637px) {
+  footer .contenedorfooter {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; }
+  footer .img-logo {
+    width: 100px;
+    height: 200px; } }
+
+@media screen and (max-width: 592px) {
+  .seccionuno div p {
+    font-size: 10px; } }
+
+/*-----contactanos-div-descripcion*/
+@media screen and (max-width: 528px) {
+  .contactanos .descripcion-emprendimiento .divs-contactanos img {
+    width: 300px;
+    height: 200px; } }
 
 @media screen and (max-width: 520px) {
   /*--seccion-dos---*/
@@ -390,36 +477,80 @@ footer h3 {
     grid-auto-rows: 300px;
     gap: 10px; } }
 
+/*-----contactanos-div-descripcion*/
+@media screen and (max-width: 508px) {
+  .contactanos .logo-contactanos {
+    display: none; }
+  .contactanos .descripcion-emprendimiento .titulo-descrip h3 {
+    font-size: 30px; }
+  .contactanos .descripcion-emprendimiento .titulo-descrip h4 {
+    font-size: 20px; }
+  .div-cuatro-contactanos {
+    display: none; }
+  .div-cinco-contactanos {
+    display: none; } }
+
 @media screen and (max-width: 481px) {
   /*----seccion uno-----*/
   .seccionuno {
     height: 60vh;
     margin-top: 10px; }
   .seccionuno div h2 {
-    font-size: 20px; }
+    font-size: 15px; }
   .seccionuno div p {
-    font-size: 13px; }
+    font-size: 10px; }
   .seccionuno img {
-    width: 140px;
-    height: 130px;
+    width: 250px;
+    height: 250px;
     margin: 0px 10px 0px 0px; }
   /*-----seccion-dos-----*/
   .seccion-dos h2 {
     font-size: 20px; }
   .seccion-dos p {
-    font-size: 13px; }
+    font-size: 10px; }
   /*------aside------*/
   aside div p {
     width: 100%;
-    height: 20vh;
     color: white;
     text-align: start;
     font-size: 10px;
     margin-left: 10px;
-    padding: 10px; } }
+    padding: 10px; }
+  footer .contenedorfooter {
+    display: flex;
+    align-items: center; }
+    footer .contenedorfooter .img-logo {
+      width: 100px;
+      height: 100px; }
+    footer .contenedorfooter p {
+      font-size: 10px;
+      padding: 5px;
+      text-align: start; }
+    footer .contenedorfooter .redes {
+      display: flex;
+      flex-direction: row; }
+      footer .contenedorfooter .redes img {
+        padding: 5px;
+        justify-content: space-around; } }
+
+@media screen and (max-width: 446px) {
+  .seccionuno img {
+    width: 200px;
+    height: 300px;
+    margin: 0px 10px 0px 0px; } }
+
+@media screen and (max-width: 376px) {
+  .seccionuno div h2 {
+    font-size: 13px; }
+  .seccionuno div p {
+    font-size: 10px; }
+  .seccionuno img {
+    width: 150px;
+    height: 250px;
+    margin: 0px 10px 0px 0px; } }
 
 @media screen and (max-width: 370px) {
   .seccionuno div h2 {
-    font-size: 25px; }
+    font-size: 13px; }
   .seccionuno div p {
-    font-size: 13px; } }
+    font-size: 10px; } }
